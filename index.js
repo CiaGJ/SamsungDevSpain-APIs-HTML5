@@ -1,3 +1,10 @@
+function doClick() {
+    var el = document.getElementById("file");
+    if (el) {
+      el.click();
+    }
+  }
+
 // File validation
 function fileValidation(){
     var inputFile = document.getElementById("file")

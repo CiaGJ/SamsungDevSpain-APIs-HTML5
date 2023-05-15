@@ -5,6 +5,7 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="./styles.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     </head>
     <body>
         <script src="index.js"></script>
@@ -13,8 +14,9 @@
         </header>
         <main class="main">
             <section class="uploader">
-                <p>Seleccione el archivo que quiere reproducir</p>
-                <input type="file" id="file" onchange="fileLoader()">
+                <p class="text">Seleccione el archivo que quiere reproducir</p>
+                <input type="file" id="file" onchange="fileLoader()" style="display:none">
+                <button class="btn" href="javascript:doClick()"><i class="fa fa-folder"></i> Seleccionar archivo</button>
             </section>
             <section class="player">
                 <video id="video" class="video" src="">ERROR</video>
