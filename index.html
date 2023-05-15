@@ -16,14 +16,14 @@
             <section class="uploader">
                 <p class="text">Seleccione el archivo que quiere reproducir</p>
                 <input type="file" id="file" onchange="fileLoader()" style="display:none">
-                <button class="btn" href="javascript:doClick()"><i class="fa fa-folder"></i> Seleccionar archivo</button>
+                <button class="btn" onclick="doClick()" id="buttonText"><i class="fa fa-folder" id="icon"></i> Seleccionar archivo</button>
             </section>
             <section class="player">
-                <video id="video" class="video" src="">ERROR</video>
+                <video id="video" class="video" src="" poster="pending-state.png">ERROR</video>
                 <div class="controls">
-                    <button class="button" id="play" onclick="playVideo()">Reproducir</button>
-                    <button class="button" id="vol-up" onclick="volumeUp()">Subir</button>
-                    <button class="button" id="vol-dowm" onclick="volumeDown()"> Bajar</button>
+                    <button class="button" id="play" onclick="playVideo()"><i class="fa fa-play-circle playerBtn"></i>Reproducir</button>
+                    <button class="button" id="vol-up" onclick="volumeUp()"><i class="fa fa-volume-up playerBtn"></i>Subir</button>
+                    <button class="button" id="vol-dowm" onclick="volumeDown()"><i class="fa fa-volume-down playerBtn"></i> Bajar</button>
                 </div>
             </section>
         </main>
