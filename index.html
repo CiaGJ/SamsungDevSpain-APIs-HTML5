@@ -9,14 +9,20 @@
     <body>
         <script src="index.js"></script>
         <header class="header">
-            <h1>Reproductor de videos</h1>
+            <h1>Reproductor de vídeo</h1>
         </header>
-        <main>
-            <section class="uplaoder">
-                <p>Seleccionr el archivo que quiere reproducir</p>
-                <input type="file" class="button" id="file">
+        <main class="main">
+            <section class="uploader">
+                <p>Seleccione el archivo que quiere reproducir</p>
+                <input type="file" id="file" onchange="fileLoader()">
             </section>
-            <section classs="player"></section>
+            <section class="player">
+                <video id="video" class="video" src="">ERROR</video>
+                <div class="controls">
+                    <button class="button" id="play" onclick="playVideo()">Reproducir</button>
+                    <button class="button" id="vol-up" onclick="volumeUp()">Subir</button>
+                    <button class="button" id="vol-dowm" onclick="volumeDown()"> Bajar</button>
+                </div>
+            </section>
         </main>
-    </body>
 </html>
